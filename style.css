@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: JetBrains Mono;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(17, 17, 17, 0.192);
+}
+
+.codeIcon{
+    margin-left: 10px;
+    width: 40px;
+}
+
+.groupLogo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+.groupAutor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.disciplina{
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.linkGithub{
+
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.groupAutor::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(26, 26, 26);
+    transition: all 0.5s ease-out;
+    transform: translateX(-50%);
+  }
+  
+  .groupAutor:hover::after {
+    width: 100%;
+  }
+
+.iconGit{
+    width: 35px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerLinks{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    /* background-color: rebeccapurple; */
+    width: 90%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.cardLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    height: 420px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, inset rgba(17, 17, 17, 0.04) 0px 10px 10px -5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.cardLink:hover {
+    transform: perspective(600px) rotateY(5deg);
+    margin-top: -20px;
+    box-shadow: inset rgba(0, 0, 0, 0.171) 0px 20px 25px -5px, inset rgba(0, 0, 0, 0.137) 0px 10px 10px -5px;
+}
+
+.headerCard{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    /* background-color: aqua; */
+}
+
+.imagePlatform{
+    width: 85px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.groupNameProject{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: brown; */
+    width: 75%;
+    margin-left: 15px;
+    height: 80px;
+    padding: 0;
+}
+
+.projectName{
+    /* margin-top: 5px; */
+    font-size: 24px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+.platformName{
+    font-size: 19px;
+    margin-top: 0px;
+    font-weight: 600;
+    color: gray;
+}
+
+.spaceLinerCard{
+    margin-top: 7px;
+    border: 2px solid #cfcfcf;
+    width: 90%;
+    border-radius: 40px;
+}
+
+.fotoCard{
+    margin-top: 12px;
+    border-radius: 20px;
+    width: 470px;
+}
